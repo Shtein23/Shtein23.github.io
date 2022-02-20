@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Gatwick;
+    src: url("font/Gatwick-Bold.otf") format("opentype");
+}
+
+
+body {
+    font-family: Appetite-Italic!important;
+}
+
+.card {
+    /*margin: 2em;*/
+    webkit-box-shadow: 0px 6px 18px 4px rgba(34, 60, 80, 0.2);
+                    -moz-box-shadow: 0px 6px 18px 4px rgba(34, 60, 80, 0.2);
+                    box-shadow: 0px 6px 18px 4px rgba(34, 60, 80, 0.2);
+}
+
+.small-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-size: 3.125em;
+    margin-bottom: 1em;
+}
+
+.card-img-top {
+    padding: 0.5em;
+}
