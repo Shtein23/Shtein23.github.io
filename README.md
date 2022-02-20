@@ -1,1 +1,1 @@
-# OSINT ITMO
+# SIte FOR PROJECT "Alternative Communication"
