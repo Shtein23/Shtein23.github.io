@@ -111,6 +111,9 @@ footer .list-group-item {
     border-color: white;
 }
 
+.accordion-button {
+    font-size: 1.7rem;
+}
 
 @media screen and (man-width: 1800px) {
     .small-title {
