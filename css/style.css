@@ -3,6 +3,13 @@
     src: url("font/Gatwick-Bold.otf") format("opentype");
 }
 
+
+@font-face {
+    font-family: Adigiana;
+    src: url("../font/adigiana2.ttf") format("truetype");
+}
+
+
 @font-face {
     font-family: 'Appetite-Italic';
     src: url('../font/appetite-italic.eot'); /* IE 9 Compatibility Mode */
@@ -25,7 +32,13 @@
 
 
 body {
-    font-family: BIP!important;
+    font-family: Adigiana!important;
+}
+
+.nav-link, .btn, button {
+    font-size: 1.2em;
+
+
 }
 
 .card {
@@ -46,13 +59,13 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     line-height: 100%;
-    font-size: 3em;
+    font-size: 3.5em;
     margin-bottom: 1em;
 
 }
 
 .great-title {
-    font-size: 3.5em;
+    font-size: 4em;
     font-weight: 300;
     text-transform: uppercase;
 
