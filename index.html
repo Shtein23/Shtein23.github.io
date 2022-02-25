@@ -546,36 +546,38 @@
     <script>
     	$(document).ready(function(){
 	    	$('#phone').mask("+7 (999)-999-99-99")
-
-	    	let data = $('#userData').serialize();
+		
+		$('#userData').submit(function(){
+	    		let data = $('#userData').serialize();
             
             
-            $.ajax({
-                url: 'http://lgs404.ru/mail-a.php',
-                type: 'POST',
-                data: data,
-                beforeSend: function() {
-                    // $("#sendMail").prop("disabled", true);
-                },
-                success: function(res){
-                    // if (data['error']) { 
-                    //     // alert(data['error']); 
-                    //     $('.toast-body').text(data['error']).addClass('bg-danger1').removeClass('bg-success1 bg-warning1')
-                    //     $('.toast').toast('show')
-                    // } else { 
-                    //     // console.log('Письмo oтврaвлeнo!');
-                    //     $('.toast-body').text('Ваше сообщение отправлено!').addClass('bg-success1').removeClass('bg-danger1 bg-warning1')
-                    //     $('.toast').toast('show')
-                    //     $("#userData").trigger("reset");
-                    //     $("#sendMail").prop("disabled", false);
-                    // }
-                },
-                error: function(){
-                    // alert('Ошибка');
-                    // $('.toast-body').text('Ошибка отправки!').addClass('bg-danger1').removeClass('bg-success1 bg-warning1')
-                    // $('.toast').toast('show')
-                }
-            });
+		    $.ajax({
+			url: 'http://lgs404.ru/mail-a.php',
+			type: 'POST',
+			data: data,
+			beforeSend: function() {
+			    // $("#sendMail").prop("disabled", true);
+			},
+			success: function(res){
+			    // if (data['error']) { 
+			    //     // alert(data['error']); 
+			    //     $('.toast-body').text(data['error']).addClass('bg-danger1').removeClass('bg-success1 bg-warning1')
+			    //     $('.toast').toast('show')
+			    // } else { 
+			    //     // console.log('Письмo oтврaвлeнo!');
+			    //     $('.toast-body').text('Ваше сообщение отправлено!').addClass('bg-success1').removeClass('bg-danger1 bg-warning1')
+			    //     $('.toast').toast('show')
+			    //     $("#userData").trigger("reset");
+			    //     $("#sendMail").prop("disabled", false);
+			    // }
+			},
+			error: function(){
+			    // alert('Ошибка');
+			    // $('.toast-body').text('Ошибка отправки!').addClass('bg-danger1').removeClass('bg-success1 bg-warning1')
+			    // $('.toast').toast('show')
+			}
+		    });
+		});
 	    });
     </script>
 </body>
