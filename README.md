@@ -1,1 +1,1 @@
-# SITE FOR PROJECT "Alternative Communication"
+# Simple web-site for project "Alternative Communication"
