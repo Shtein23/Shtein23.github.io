@@ -364,22 +364,29 @@
 						<h1 class="small-title">Обратная связь</h1>
 						<p>Eсли у вас есть вопросы, вы можете задать их нашим специалистам.</p>
 					</div>
-					<form id="#userData" class="row col-md-8 col-lg-6 col-xl-5 col-xxl-4 g-3 align-self-center">
+					<form id="#userData" class="row col-md-8 col-lg-6 col-xl-5 col-xxl-4 g-3 align-self-center" action="https://formspree.io/f/xoqbjood"
+  method="POST">
 			  			<div class="col-12">
 			  				<label for="inputEmail4" class="form-label d-none">Фамилия Имя Отчество</label>
-			  				<input type="text" name="name" id="name" class="form-control form-control-lg" id="inputEmail4" placeholder="Фамилия Имя Отчество">
+			  				<input type="text" name="name" id="name" class="form-control form-control-lg" id="inputEmail4" placeholder="Фамилия Имя Отчество" required>
 			  			</div>
 			  			<div class="col-md-6">
 			  				<label for="inputEmail4" class="form-label d-none">Почта</label>
-			  				<input type="email" name="email" id="email" class="form-control form-control-lg" id="inputEmail4" placeholder="Ваш email">
+			  				<input type="email" name="email" id="email" class="form-control form-control-lg" id="inputEmail4" placeholder="Ваш email" required>
 			  			</div>
 			  			<div class="col-md-6">
 			  				<label for="phone" class="form-label d-none">Телефон</label>
-			  				<input type="phone" name="phone" id="phone" class="form-control form-control-lg" id="phone" placeholder="Ваш телефон">
+			  				<input type="phone" name="phone" id="phone" class="form-control form-control-lg" id="phone" placeholder="Ваш телефон" required>
 			  			</div>
 			  			<div class="col-12">
 			  				<label for="message" class="form-label d-none">Сообщение</label>
-			  				<textarea type="message"name="message" id="message" rows="3" class="form-control form-control-lg" id="message" placeholder="Ваше сообщение"></textarea>
+			  				<textarea type="message"name="message" id="message" rows="3" class="form-control form-control-lg" id="message" placeholder="Ваше сообщение" required></textarea>
+			  			</div>
+			  			<div class="col-12">
+			  				<input class="form-check-input" type="checkbox" value="" id="soglpers" required>
+			  				<label class="form-check-label" for="soglpers">
+			  					Согласие на обработку персональных данных
+			  				</label>
 			  			</div>
 			  			<div class="col-12 d-flex align-items-center justify-content-center">
 			  				<button type="submit" class="btn btn-info btn-lg">Отправить</button>
@@ -546,40 +553,6 @@
     <script>
     	$(document).ready(function(){
 	    	$('#phone').mask("+7 (999)-999-99-99")
-
-
-	    	$('#userData').submit(function(){
-		    	let data = $('#userData').serialize();
-	            
-	            
-	            $.ajax({
-	                url: 'http://lgs404.ru/mail-a.php',
-	                type: 'POST',
-	                data: data,
-	                beforeSend: function() {
-	                    // $("#sendMail").prop("disabled", true);
-	                },
-	                success: function(res){
-	                    // if (data['error']) { 
-	                    //     // alert(data['error']); 
-	                    //     $('.toast-body').text(data['error']).addClass('bg-danger1').removeClass('bg-success1 bg-warning1')
-	                    //     $('.toast').toast('show')
-	                    // } else { 
-	                    //     // console.log('Письмo oтврaвлeнo!');
-	                    //     $('.toast-body').text('Ваше сообщение отправлено!').addClass('bg-success1').removeClass('bg-danger1 bg-warning1')
-	                    //     $('.toast').toast('show')
-	                    //     $("#userData").trigger("reset");
-	                    //     $("#sendMail").prop("disabled", false);
-	                    // }
-	                },
-	                error: function(){
-	                    // alert('Ошибка');
-	                    // $('.toast-body').text('Ошибка отправки!').addClass('bg-danger1').removeClass('bg-success1 bg-warning1')
-	                    // $('.toast').toast('show')
-	                }
-	            });
-	            return false;
-	        });
 	    });
     </script>
 </body>
