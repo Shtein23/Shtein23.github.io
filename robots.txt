@@ -1,0 +1,20 @@
+User-agent: Yandex
+Allow: /index.html
+Allow: /peks.html
+Allow: /games.html
+Allow: /sitemap.html
+Allow: *.js
+Allow: *.css
+Sitemap: http://alter-comm.ru/sitemap.xml
+
+
+User-agent: Googlebot
+Allow: /index.html
+Allow: /peks.html
+Allow: /games.html
+Allow: /sitemap.html
+Allow: *.js
+Allow: *.css
+Sitemap: http://alter-comm.ru/sitemap.xml
+
+Host: alter-comm.ru
