@@ -19,7 +19,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/eisbehr-/jquery.lazy@1.7.10/jquery.lazy.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/eisbehr-/jquery.lazy@1.7.10/jquery.lazy.plugins.min.js"></script>
-
 	
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar-example2">
 		<div class="container-fluid">
@@ -286,7 +285,7 @@
 						</div>
 						<div class="tab-content w-100" id="v-pills-tabContent">
 							<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-								<iframe id="video1" style="width: 100%;min-height: 45vh;" src="https://www.youtube.com/embed/NQfceBxLZcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<iframe id="video1" style="width: 100%;min-height: 45vh;" src="https://www.youtube.com/embed/NQfceBxLZcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen srcdoc="<a href=//www.youtube.com/embed/NQfceBxLZcg><img src=//i3.ytimg.com/vi/NQfceBxLZcg/hqdefault.jpg></a>"></iframe>
 								<iframe id="video2" style="width: 100%;min-height: 45vh;" src="https://www.youtube.com/embed/PvQ24LeJTz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
@@ -562,7 +561,6 @@
     <script>
     	$(document).ready(function(){
 	    	$('#phone').mask("+7 (999)-999-99-99")
-		$('#video1').Lazy();
 	    });
     </script>
 </body>
